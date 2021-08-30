@@ -48,7 +48,9 @@ section{
     text-transform: uppercase;
     font-size: 4rem;
 }
-
+#mail{
+    opacity: 0;
+}
 .btn{
     margin-top: 1rem;
     display: inline-block;

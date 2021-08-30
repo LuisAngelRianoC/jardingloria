@@ -183,18 +183,19 @@
     <section class="contact" id="contact">
         <h1 class="heading"><span>Contacto</span></h1>
 
-        <form action="">
+        <form action="correo.php" method="POST" id="form">
         <div class="inputBox">
-            <input type="text" placeholder="Nombre">
-            <input type="email" placeholder="Correo">
+            <input type="text" name="nombre" required placeholder="Nombre">
+            <input type="email" name="correo" required placeholder="Correo">
         </div>
         <div class="inputBox">
-            <input type="number" placeholder="Telefono">
-            <input type="text" placeholder="Asunto">
+            <input type="number" name="telefono" required placeholder="Telefono">
+            <input type="text" name="asunto" placeholder="Asunto">
         </div>
-        <textarea name="" placeholder="Escribe tu mensaje" id="" cols="30" rows="10"></textarea>
+        <textarea name="mensaje" required placeholder="Escribe tu mensaje" id="" cols="30" rows="10"></textarea>
         <input type="submit" value="Enviar Mensaje" class="btn">
         </form>
+        
     </section>
     
     <!--footer seccion-->
@@ -216,12 +217,12 @@
             </div>
             <div class="box">
                 <h3>Redes Sociales</h3>
-                <a href="#home"><i class="fab fa-facebook-f"></i>Facebook</a>
+                <a target="_blank" href="https://www.facebook.com/El-Jardín-de-Gloria-521072024968579"><i class="fab fa-facebook-f"></i>Facebook</a>
             </div>
         </div>
     </section>
 
-    <!--footer seccion-->
+    <!--theme seccion-->
     <div class="theme-toggler">
         <div class="toggle-btn">
             <i class="fas fa-cog"></i>
