@@ -8,8 +8,18 @@ $telefono = $_POST['telefono'];
 $correo = $_POST['correo'];
 $mensaje = $_POST['mensaje'];
 
-$header = "Correo enviado desde pagina";
-$mensajecompleto = "\n Nombre: ".$nombre. "\n". "Telefono: ".$telefono. "\n"."Correo: ".$correo. "\n". "Mensaje: ". $mensaje;
+$header = "De: ".$correo;
+$mensajecompleto = "\n Nombre: ".$nombre. "\n". "Telefono: ".$telefono. "\n". "Mensaje: ". $mensaje;
 
-mail($destino,$asunto,$mensajecompleto,$header);
-header('Location: index.html');
+  
+if ($_POST['submit']) {
+if (mail($destino,$asunto,$mensajecompleto,$header)) {
+echo "<script language='javascript'>
+alert('Mensaje enviado, muchas gracias.');
+window.location.href = 'https://luisriano1997.github.io/jardingloria/';
+</script>";
+} else {
+echo 'Falló el envio';
+}
+}
+?>
