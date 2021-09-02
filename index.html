@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>El Jardin de Gloria</title>
     <link rel="icon" type="image/png" href="img/flor.png" />
-     
+    
+    <!-- bootstrap cdn link  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- swiper cdn link  -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-
+    <!-- fancybox cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
     <!-- font awesome cdn link  -->
     <link
       rel="stylesheet"
@@ -20,7 +24,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -90,26 +93,28 @@
           <h3 class="title">Mis Colecciones</h3>
           <div class="icons">
             <a href="#" class="fa fa-heart"></a>
-            <a href="#" class="fa fa-share"><div class="sharethis-inline-share-buttons"></div></a>
-            <a href="#" class="fa fa-eye"></a>
+            <a href="#" class="fa fa-share"></a>
+            <a href="img/9.jpg" class="fancybox" data-fancybox="gallery-1"><i class="fa fa-eye"></i></a> 
           </div>
         </div>
+
         <div class="box">
           <img src="img/10.jpg" />
           <h3 class="title">Mis Colecciones</h3>
           <div class="icons">
-            <a href="#" class="fa fa-heart"></a>
+            <a href="#" class="fa fa-heart"></a>  
             <a href="#" class="fa fa-share"></a>
-            <a href="#" class="fa fa-eye"></a>
-          </div>
+            <a href="img/10.jpg" class="fancybox" data-fancybox="gallery-1"><i class="fa fa-eye"></i></a>         
+            </div>
         </div>
+
         <div class="box">
           <img src="img/11.jpg" />
           <h3 class="title">Mis Colecciones</h3>
           <div class="icons">
             <a href="#" class="fa fa-heart"></a>
             <a href="#" class="fa fa-share"></a>
-            <a href="#" class="fa fa-eye"></a>
+            <a href="img/11.jpg" class="fancybox" data-fancybox="gallery-1"><i class="fa fa-eye"></i></a>  
           </div>
         </div>
         <div class="box">
@@ -118,7 +123,7 @@
           <div class="icons">
             <a href="#" class="fa fa-heart"></a>
             <a href="#" class="fa fa-share"></a>
-            <a href="#" class="fa fa-eye"></a>
+            <a href="img/12.jpg" class="fancybox" data-fancybox="gallery-1"><i class="fa fa-eye"></i></a>  
           </div>
         </div>
         <div class="box">
@@ -127,7 +132,7 @@
           <div class="icons">
             <a href="#" class="fa fa-heart"></a>
             <a href="#" class="fa fa-share"></a>
-            <a href="#" class="fa fa-eye"></a>
+            <a href="img/13.jpg" class="fancybox" data-fancybox="gallery-1"><i class="fa fa-eye"></i></a>  
           </div>
         </div>
         <div class="box">
@@ -136,7 +141,7 @@
           <div class="icons">
             <a href="#" class="fa fa-heart"></a>
             <a href="#" class="fa fa-share"></a>
-            <a href="#" class="fa fa-eye"></a>
+            <a href="img/14.jpg" class="fancybox" data-fancybox="gallery-1"><i class="fa fa-eye"></i></a>  
           </div>
         </div>
         <div class="box">
@@ -144,8 +149,8 @@
           <h3 class="title">Mis Colecciones</h3>
           <div class="icons">
             <a href="#" class="fa fa-heart"></a>
-            <a href="#" class="fa fa-share"><div class="sharethis-inline-share-buttons"></div></a>
-            <a href="#" class="fa fa-eye"></a>
+            <a href="#" class="fa fa-share"></a>
+            <a href="img/15.jpg" class="fancybox" data-fancybox="gallery-1"><i class="fa fa-eye"></i></a>  
           </div>
         </div>
         <div class="box">
@@ -154,7 +159,7 @@
           <div class="icons">
             <a href="#" class="fa fa-heart"></a>
             <a href="#" class="fa fa-share"></a>
-            <a href="#" class="fa fa-eye"></a>
+            <a href="img/16.jpg" class="fancybox" data-fancybox="gallery-1"><i class="fa fa-eye"></i></a>  
           </div>
         </div>
         <div class="box">
@@ -163,7 +168,7 @@
           <div class="icons">
             <a href="#" class="fa fa-heart"></a>
             <a href="#" class="fa fa-share"></a>
-            <a href="#" class="fa fa-eye"></a>
+            <a href="img/17.jpg" class="fancybox" data-fancybox="gallery-1"><i class="fa fa-eye"></i></a>  
           </div>
         </div>
       </div>
@@ -200,7 +205,7 @@
     <section class="contact" id="contact">
       <h1 class="heading"><span>Contacto</span></h1>
 
-      <form action="correo.php" method="POST">
+      <form id="form" class="form" action="https://formspree.io/f/mdoyygwy" method="POST">
         <div class="inputBox">
           <input type="text" name="nombre" required placeholder="Nombre" />
           <input type="email" name="correo" required placeholder="Correo" />
@@ -232,7 +237,7 @@
         <div class="box">
           <h3>Contacto</h3>
           <a href="#footer"><i class="fas fa-phone"></i>744 128 0776</a>
-          <a href="#footer"><i class="fas fa-envelope"></i>Correo@gmail.com</a>
+          <a href="#footer"><i class="fas fa-envelope"></i>gloria73rl@gmail.com</a>
           <a href="#footer"><i class="fas fa-map-marked"></i>Acapulco, Gro. Mexico</a>
         </div>
         <div class="box">
@@ -270,11 +275,11 @@
       </div>
     </div>
 
-
+    <!-- js cdn links  -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    
     <script src="js/script.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=612ec739ef517e0013850389&product=inline-share-buttons" async="async"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
   </body>
 </html>

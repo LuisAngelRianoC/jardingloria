@@ -206,9 +206,6 @@ section {
   object-fit: cover;
 }
 
-.gallery .box-container .box:hover img {
-  transform: scale(1.1);
-}
 
 .gallery .box-container .box .title {
   position: absolute;
@@ -239,10 +236,11 @@ section {
   bottom: 0;
 }
 
-.gallery .box-container .box .icons a {
+.gallery .box-container .box .icons a{
   font-size: 2rem;
   margin: 0.5rem 1rem;
   color: #fff;
+  text-decoration: none;
 }
 
 .gallery .box-container .box .icons a:hover {

@@ -16,7 +16,7 @@ if ($_POST['submit']) {
 if (mail($destino,$asunto,$mensajecompleto,$header)) {
 echo "<script language='javascript'>
 alert('Mensaje enviado, muchas gracias.');
-window.location.href = 'https://luisriano1997.github.io/jardingloria/';
+window.location.href = 'index.html';
 </script>";
 } else {
 echo 'Falló el envio';
